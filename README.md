@@ -130,12 +130,4 @@ curl -X DELETE http://localhost:8000/documents/
 
 基于 FastAPI 搭建企业知识库问答服务，实现 PDF、Word、TXT 等文档上传、解析、切片和知识检索。设计 RAG 检索增强链路，先召回相关知识片段，再结合通义千问 Qwen 大模型生成答案，降低模型直接回答造成的幻觉问题。实现 guest / employee / admin 三级权限过滤，使不同角色只能访问对应知识内容，并通过 Server-Sent Events 实现类 ChatGPT 的流式输出体验。
 
-## 面试可讲点
-
-- RAG 为什么能降低幻觉
-- 文档切片为什么要设置 overlap
-- 中文 TXT 编码为什么要兼容 GBK / GB18030
-- 为什么要做角色权限过滤
-- 流式输出和普通接口的区别
-- 如何把当前轻量检索替换为 ChromaDB、FAISS 或 Milvus
 
