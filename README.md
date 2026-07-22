@@ -124,7 +124,7 @@ curl -N -X POST http://localhost:8000/chat/stream \
 curl -X DELETE http://localhost:8000/documents/
 ```
 
-## 可写进简历的项目描述
+项目描述
 
 **企业知识库智能问答系统 | RAG / FastAPI / Qwen API**
 
